@@ -1,0 +1,35 @@
+.Manutenzione {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .Manutenzione img {
+    width: 200px; /* Imposta la larghezza dell'immagine */
+    height: 200px; /* Imposta l'altezza dell'immagine */
+    animation: rotateImage 5s linear infinite; /* Applica l'animazione all'immagine */
+    transform-origin: center center; /* Imposta il punto di trasformazione al centro dell'immagine */
+  }
+  .Manutenzione div {
+    box-sizing: border-box;
+    padding-top: 50px;
+    font-size: 2rem;
+
+  }
+  
+  @keyframes rotateImage {
+    from {
+      transform: rotate(0deg); /* Partenza: rotazione di 0 gradi */
+    }
+    to {
+      transform: rotate(360deg); /* Arrivo: rotazione di 360 gradi (una rotazione completa) */
+    }
+  }
+  

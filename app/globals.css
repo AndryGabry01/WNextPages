@@ -1,0 +1,181 @@
+
+  /*https://www.magicpattern.design/tools/css-backgrounds*/
+  :root {
+    --max-width: 1100px;
+    --border-radius: 12px;
+    --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+      "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+      "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  
+    --background-color-light: #ffffff;
+    --background-color-dark: #000000;
+
+    --color-light: #000000;
+    --color-dark: #ffffff;
+
+    --nav-bar-bgcolor: #1B2A3D;
+    --nav-bar-selected-item: #F4C400;
+    --nav-bar-text-color: white;
+    --nav-bar-hover-item: rgb(17, 17, 221);
+    --nav-bar-hover-item-text-color: white;
+
+    --md-a-color-light: #1B2A3D;
+    --md-a-color-dark: #3898f3;
+    --md-a-hover-color-light: #F4C400;
+
+    --footer-bgcolor: #1B2A3D;
+
+  
+    --background-light: linear-gradient(135deg, #f9f9f955 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #f9f9f9 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #f9f9f955 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #f9f9f9 25%, #ffffff 25%) 0px 0/ 20px 20px !important;
+    --background-dark: linear-gradient(135deg, #10101055 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #101010 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #10101055 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #101010 25%, #000000 25%) 0px 0/ 20px 20px;
+  }
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color-light); /* Imposta il colore di sfondo predefinito */
+    background: var(--background-light); /* Imposta lo sfondo predefinito */
+  }
+  
+  body {
+    color: var(--color-light);
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
+    body {
+      background-color: var(--background-color-dark); /* Cambia il colore di sfondo in modalità scura */
+      background: var(--background-dark) !important; /* Cambia lo sfondo in modalità scura */
+      color: var(--color-dark);
+
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+
+
+
+  /*
+  * MARKDOWN ZONE
+  */
+  /*
+* Questo file serve per fixare alcuni problemi come .katex-html (spiegato sotto)
+*   Oppure per aggiungere delle personalizzazioni al tema della parte di sito convertita dal markdown
+*/
+
+
+/*
+* Per qualche motivo il parser di katex che renderizza latex all'interno del file markdown, quando inserisce l'elemento html contenente la formula, 
+*    per qualche motivo inserisce due elementi:
+        1. .katex-mathml: ovvero l'elemento che renderizza la formula
+        2. .katex-html: ovvero la formula scritta sotto forma di tempo
+    Ad esempio la formula \sqrt{2x}:
+        nella pagina vedremo [la formularenderizzata]\sqrt{2x}
+    per nascondere \sqrt{2x} e quindi Fixare il problema, impostiamo la classe .katex-html su "none"
+*/
+.katex-html {
+  display: none !important;
+}
+
+
+
+/*Aggiungiamo la barra che contraddistingue i blockquote*/
+/* Stile generale della tabella */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Stile dell'intestazione della tabella */
+table th {
+  background-color: #f6f8fa;
+  border: 1px solid #d1d5da;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Stile delle celle della tabella */
+table td {
+  border: 1px solid #d1d5da;
+  padding: 8px;
+}
+
+/* Stile delle righe pari */
+table tr:nth-child(even) {
+  background-color: #f6f8fa;
+}
+
+/* Stile delle righe dispari */
+table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Stile delle righe al passaggio del mouse */
+table tr:hover {
+  background-color: #f1f8ff;
+}
+
+/* Stile dell'hr */
+hr {
+  border-top: 1px solid #3e4d5f;
+  margin: 16px 0;
+}
+
+/* Stile del blockquote */
+blockquote {
+  border-left: 4px solid #3e4d5f;
+  margin: 0;
+  padding: 0 15px;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Aggiunta regole per il tema scuro */
+    table {
+        border-color: #555; /* colore dei bordi della tabella in modalità scura */
+    }
+
+    table th {
+        background-color: #2b2b2b; /* colore dell'intestazione della tabella in modalità scura */
+        color: #ffffff; /* colore del testo dell'intestazione della tabella in modalità scura */
+    }
+
+    table td {
+        background-color: #333; /* colore delle celle della tabella in modalità scura */
+        color: #ffffff; /* colore del testo delle celle della tabella in modalità scura */
+    }
+
+    table tr:nth-child(even) {
+        background-color: #2b2b2b; /* colore delle righe pari della tabella in modalità scura */
+    }
+
+    table tr:nth-child(odd) {
+        background-color: #333; /* colore delle righe dispari della tabella in modalità scura */
+    }
+
+    table tr:hover {
+        background-color: #444; /* colore delle righe al passaggio del mouse della tabella in modalità scura */
+    }
+}

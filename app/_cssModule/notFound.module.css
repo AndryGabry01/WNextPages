@@ -1,0 +1,37 @@
+
+.not_found {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.not_found img {
+  border-radius: 100px;
+}
+
+.not_found h1 {
+  font-size: 3rem;
+
+}
+
+.not_found h2 {
+  font-size: 1.2rem;
+
+  margin-bottom: 20vh;
+}
+
+@media (max-width: 700px) {
+  .not_found {
+    
+    align-items:start;
+  }
+  .not_found img {
+    width: 100px;
+    height: auto;
+}
+}

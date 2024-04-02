@@ -1,0 +1,40 @@
+.footer {
+    display: flex !important;
+    padding: 30px;
+    padding-bottom: 10px;
+    height: 25vh;
+    justify-content: center;
+    align-items: end;
+}
+
+.footer_mobile {
+    display: none;
+    background-color: var(--footer-bgcolor);
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+
+.footer img,
+.footer_mobile img {
+    margin: 8px;
+}
+
+.footer img:hover {
+    cursor: pointer;
+    filter: saturate(0.8);
+    margin-bottom: 18px;
+
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .footer {
+        display: none !important;
+    }
+
+    .footer_mobile {
+        display: flex;
+    }
+}

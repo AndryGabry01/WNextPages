@@ -1,0 +1,57 @@
+{
+    "COMMUNITYNAME": "exampleCommunity",
+    "SECTION": [
+        {
+            "sectionName": "exampleHome",
+            "btnLabel": "Example Home",
+            "fileName": "exampleHome",
+            "iconName": "ExampleIconHome",
+            "customPath": "/examplePath"
+        },
+        {
+            "sectionName": "exampleQea",
+            "btnLabel": "Example Q&A",
+            "fileName": "exampleQea",
+            "iconName": "ExampleIconQuestion",
+            "customPath": "/examplePath"
+        }
+    ],
+    "FOOTERLINK": [
+        {
+            "url": "https://www.example.com/",
+            "image": "exampleImage",
+            "alt": "Example alt text",
+            "width": 50,
+            "height": 50,
+            "target": "_blank"
+        },
+        {
+            "url": "https://www.example.com/",
+            "image": "exampleImage",
+            "alt": "Example alt text",
+            "width": 50,
+            "height": 50,
+            "target": "_blank"
+        },
+        {
+            "url": "https://www.example.com/",
+            "image": "exampleImage",
+            "alt": "Example alt text",
+            "width": 50,
+            "height": 50,
+            "target": "_blank"
+        }
+    ],
+    "SITE_METADATA": {
+        "title": "Example Title",
+        "description": "Example description",
+        "keywords": "Example, Keywords",
+        "author": "Example Author",
+        "image": "https://www.example.com/example.png",
+        "url": "https://www.example.com",
+        "twitterUsername": "@example",
+        "siteName": "Example Site"
+    },
+    "NEXT_PUBLIC_BASE_PATH": "/WNextPages/",
+    "ENABLE_MANUTENZIONE": false
+}
