@@ -1,92 +1,57 @@
 {
-    "COMMUNITYNAME": "lintinf",
+    "COMMUNITYNAME": "exampleCommunity",
     "SECTION": [
         {
-            "sectionName": "home",
-            "btnLabel":"Home",
-            "fileName": "home",
-            "iconName": "IoHome",
-            "customPath": "/"
+            "sectionName": "exampleHome",
+            "btnLabel": "Example Home",
+            "fileName": "exampleHome",
+            "iconName": "ExampleIconHome",
+            "customPath": "/examplePath"
         },
         {
-            "sectionName": "qea",
-            "btnLabel":"Q&A",
-            "fileName": "qea",
-            "iconName": "FaQuestion",
-            "customPath": null
-        },
-        {
-            "sectionName": "appunti",
-            "btnLabel":"Appunti",
-            "fileName": "appunti",
-            "iconName": "FaBook",
-            "customPath": null
-        },
-        {
-            "sectionName": "tutorial",
-            "btnLabel":"Tutorial",
-            "fileName": "tutorial",
-            "iconName": "FaHammer",
-            "customPath": null
-        },
-        {
-            "sectionName": "informazioni",
-            "btnLabel":"Informazioni",
-            "fileName": "informazioni",
-            "iconName": "GrCircleInformation",
-            "customPath": null
-        },
-        {
-            "sectionName": "contributori",
-            "btnLabel":"Contributori",
-            "fileName": "contributori",
-            "iconName": "FaPeopleGroup",
-            "customPath": null
-        },
-        {
-            "sectionName": "rappresentati",
-            "btnLabel":"Rappresentati",
-            "fileName": "rappresentati",
-            "iconName": "MdAddModerator",
-            "customPath": null
+            "sectionName": "exampleQea",
+            "btnLabel": "Example Q&A",
+            "fileName": "exampleQea",
+            "iconName": "ExampleIconQuestion",
+            "customPath": "/examplePath"
         }
     ],
     "FOOTERLINK": [
         {
-            "url": "https://www.instagram.com/sinistrauniversitaria/",
-            "image": "ssu",
-            "alt": "Collegamento alla pagina di Sinistra Studentesca Universitaria",
+            "url": "https://www.example.com/",
+            "image": "exampleImage",
+            "alt": "Example alt text",
             "width": 50,
             "height": 50,
             "target": "_blank"
-          },
-          {
-            "url": "https://github.com/lintinf",
-            "image": "github-white",
-            "alt": "Collegamento alla pagina repository di Github",
+        },
+        {
+            "url": "https://www.example.com/",
+            "image": "exampleImage",
+            "alt": "Example alt text",
             "width": 50,
             "height": 50,
             "target": "_blank"
-          },
-          {
-            "url": "https://www.instagram.com/matricole_unipr/",
-            "image": "matricole",
-            "alt": "Collegamento alla pagina delle Matricole",
+        },
+        {
+            "url": "https://www.example.com/",
+            "image": "exampleImage",
+            "alt": "Example alt text",
             "width": 50,
             "height": 50,
             "target": "_blank"
-          }
+        }
     ],
-    "SITE_METADATA":{ 
-        "title": "Lintinf",
-        "description": "Sito di riferimento per gli studenti del corso di laurea triennale di Ingengeria delle Tecnologie Informatiche dell'Università di Parma",
-        "keywords": "Informatica, Università di Parma, Studenti, Lintinf, Sinistra Studentesca Universitaria, unipr, Parma, Ingengeria delle Tecnologie Informatiche, ITI, IET, Ingegneria Informatica, Informatica, Università, Studenti, Studenti Universitari, Studenti Unipr, Studenti Parma, Studenti Informatica, Studenti Ingegneria Informatica, Studenti ITI, Studenti IET, Studenti Ingengeria delle Tecnologie Informatiche, Studenti Università di Parma, Studenti Università di Parma Informatica, Studenti Università di Parma Ingegneria Informatica, Studenti Università di Parma ITI, Studenti Università di Parma IET, Studenti Università di Parma Ingengeria delle Tecnologie Informatiche",
-        "author": "Sinistra Studentesca Universitaria",
-        "image": "https://www.lintinf.unipr.it/lintinf.png",
-        "url": "https://www.lintinf.unipr.it",
-        "twitterUsername": "@lintinf",
-        "siteName": "Lintinf"
+    "SITE_METADATA": {
+        "title": "Example Title",
+        "description": "Example description",
+        "keywords": "Example, Keywords",
+        "author": "Example Author",
+        "image": "https://www.example.com/example.png",
+        "url": "https://www.example.com",
+        "twitterUsername": "@example",
+        "siteName": "Example Site"
     },
-    "NEXT_PUBLIC_BASE_PATH": "/lintinf/",
+    "NEXT_PUBLIC_BASE_PATH": "/WNextPages/",
     "ENABLE_MANUTENZIONE": false
 }
