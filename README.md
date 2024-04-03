@@ -152,5 +152,6 @@ Possibilmente citando sempre la fonte, come abiamo fatto noi nella relativa sezi
 - [x] Inserire il file LICENSE
 - [ ] Rendere Generico il repository, in modo che sia solo un esempio e poi adattarlo alla lintinf, quando verra caricato sull'organizzazione
 - [ ] Pulire da file superflui e file copia
+- [ ] Risolvi i problemi di stile
 - [ ] Aggiungere la configurazione dei metadati tramite il file JSON Community....json 
 - [ ] Aggiornare Workflow Nextjs a v5 [link alla risoluzione dei bug](https://github.com/actions/starter-workflows/pull/2354)
